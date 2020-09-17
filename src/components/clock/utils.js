@@ -1,9 +1,8 @@
-import {DAY, MONTH} from "../../config/config";
+import {DAY, HOUR, MINUTE, MONTH} from "../../config/config";
 
 export const calculateTimeLeft = () => {
     const year = new Date().getFullYear();
-    const difference = +new Date(`${MONTH}/${DAY}/${year}`) - +new Date();
-
+    const difference = +new Date(year, MONTH-1, DAY, HOUR, MINUTE) - +new Date();
 
     return difference > 0 && ({
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
