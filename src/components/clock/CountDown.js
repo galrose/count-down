@@ -17,11 +17,12 @@ const useStyles = makeStyles(() => ({
     },
     numbers: {
         color: 'white',
-        fontSize: '10vh',
+        fontSize: '12vh',
+        fontFamily: 'digital7'
     },
 
     units: {
-        fontSize: '3vh',
+        fontSize: '5vh',
     }
 }));
 

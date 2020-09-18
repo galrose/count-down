@@ -9,6 +9,11 @@ const useStyles = makeStyles(() => ({
         fontSize: '30vh',
         color: 'rgb(144,37,37)',
         zIndex: 999,
+    },
+    root: {
+        display: 'flex',
+        justifyContent: 'space-around',
+        width: '70vw'
     }
 }));
 
@@ -30,7 +35,7 @@ export default ()=>{
     );
 
     return (timerComponents.length
-        ? timerComponents
+        ? <div className={classes.root}>{timerComponents}</div>
         : <Typography className={classes.timesUp}>Time's up!</Typography>)
 
 }

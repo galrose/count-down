@@ -1,4 +1,4 @@
-export const DAY = 1
-export const MONTH = 9
-export const HOUR = 0
+export const DAY = 18
+export const MONTH = 1
+export const HOUR = 12
 export const MINUTE = 0

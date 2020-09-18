@@ -6,7 +6,6 @@ const useStyles = makeStyles(() => ({
     image: {
         height:'85vh',
         opacity: '1',
-        position: 'absolute',
         right: 0,
         zIndex: 1,
     }
